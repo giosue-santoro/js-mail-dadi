@@ -8,3 +8,22 @@ if (email === emailList[0] || email === emailList[1] || email === emailList[2]) 
 } else {
   var login = document.getElementById('login').innerHTML = 'L\'email inserita è inesistente';
 }
+
+//GIOCO DADI
+
+//Numero dell'utente
+var userDice = Math.floor(Math.random() * 6) +1;
+
+//Numero del computer
+var pcDice = Math.floor(Math.random() * 6) +1;
+
+
+
+//Risultato della partita
+if (userDice > pcDice) {
+  var victory = document.getElementById('result').innerHTML = 'Hai vinto';
+} else if (dadoUtente === dadoPc) {
+  var draw = document.getElementById('result').innerHTML = 'Hai pareggiato';
+} else {
+  var defeat = document.getElementById('result').innerHTML = 'Hai perso';
+}
