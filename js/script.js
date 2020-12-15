@@ -22,7 +22,7 @@ var pcDice = Math.floor(Math.random() * 6) +1;
 //Risultato della partita
 if (userDice > pcDice) {
   var victory = document.getElementById('result').innerHTML = 'Hai vinto';
-} else if (dadoUtente === dadoPc) {
+} else if (userDice === pcDice) {
   var draw = document.getElementById('result').innerHTML = 'Hai pareggiato';
 } else {
   var defeat = document.getElementById('result').innerHTML = 'Hai perso';
